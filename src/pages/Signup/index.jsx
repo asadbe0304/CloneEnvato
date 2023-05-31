@@ -1,8 +1,9 @@
 import "./index.scss"
+
 const index = () => {
   return (
     <>
-      <h3>Header</h3>
+      <h2>Login</h2>
     </>
   );
 };
