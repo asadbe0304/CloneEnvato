@@ -1,10 +1,9 @@
-import "./index.scss"
 
 const index = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h3>Login</h3>
+    </>
   );
 };
 
