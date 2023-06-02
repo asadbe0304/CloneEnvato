@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 
 const LoginTop = () => {
   return (
@@ -7,7 +8,10 @@ const LoginTop = () => {
         <div className="container">
           <div className="d-flex align-items-center justify-content-between">
             <h2>Envato</h2>
-            <NavLink to={"/signin"}>Sign In</NavLink>
+            <NavLink to={"/signin"}>
+              <CgProfile />
+              Sign In
+            </NavLink>
           </div>
         </div>
       </div>
