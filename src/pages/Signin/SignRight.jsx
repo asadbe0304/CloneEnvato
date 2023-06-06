@@ -3,7 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { BsApple } from "react-icons/bs";
 
-const right = () => {
+const SignRight = () => {
   return (
     <>
       <div className="right-login mt-4">
@@ -40,6 +40,21 @@ const right = () => {
         >
           <span className="position-absolute z-2 bg-white or">or</span>
         </div>
+        <div className="w-100 d-flex gap-1 align-items-center mb-3 mt-4">
+          <label htmlFor="floatingInut">
+            Last Name
+            <input
+              type="text"
+              className="form-control mt-2"
+              placeholder="Last name"
+            />
+          </label>
+          <label htmlFor="floatingInut">
+            First Name
+            <input type="text" className="form-control mt-2" placeholder="First name" />
+          </label>
+        </div>
+        <div className=" mb-3 mt-4"></div>
         <div className=" mb-3 mt-4">
           <label htmlFor="floatingInut">Email address</label>
           <input
@@ -56,7 +71,7 @@ const right = () => {
             placeholder="Password"
           />
         </div>
-        <button className="btn w-100 my-4 btn-danger">Sign in </button>
+        <button className="btn w-100 my-4 btn-danger">Create Account </button>
 
         <div className="new-account">
           New here?
@@ -76,4 +91,4 @@ const right = () => {
   );
 };
 
-export default right;
+export default SignRight;
