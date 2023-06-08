@@ -1,17 +1,11 @@
-import {
-  useReducer,
-  useContext,
-  createContext
-} from "react";
+import { useReducer, useContext, createContext } from "react";
 import { cartReducer } from "./reducers";
 
-
-const initialState = {
-  product: [],
-};
 const AuthContext = createContext({});
 export const AuthProvider = ({ children }) => {
-  // const [auth, setAuth] = useState({});
+  const initialState = {
+    auth: {},
+  };
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
   return (
@@ -21,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export default AuthContext;
+export default AuthProvider;
 
 export const CartState = () => {
   return useContext(AuthContext);

@@ -1,16 +1,16 @@
-import { createContext, useState } from "react";
+// import { createContext, useState } from "react";
 
-const AuthRegis = createContext({});
+// const AuthRegis = createContext({});
 
-export  const AuthRegister = ({children}) => {
-  const [auth, setAuth] = useState({});
+// export  const AuthRegister = ({children}) => {
+//   const [auth, setAuth] = useState({});
 
-  return (
-    <AuthRegis.Provider value={{ auth, setAuth }}>
-      {children}
-    </AuthRegis.Provider>
-  );
-};
+//   return (
+//     <AuthRegis.Provider value={{ auth, setAuth }}>
+//       {children}
+//     </AuthRegis.Provider>
+//   );
+// };
 
-export default AuthRegis;
+// export default AuthRegis;
 

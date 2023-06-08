@@ -1,7 +1,11 @@
 import LoginTop from "./../Login/LoginTop";
 import Right from "./SignRight";
 import SignLeft from "./SignLeft";
+import "./index.scss"
 const index = () => {
+
+
+  
   return (
     <>
       <div className="bg-login">
